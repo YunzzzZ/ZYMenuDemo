@@ -14,6 +14,10 @@
 		1A45CBA624DA9A7E00D5FA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45CBA524DA9A7E00D5FA87 /* Assets.xcassets */; };
 		1A45CBA924DA9A7E00D5FA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A45CBA724DA9A7E00D5FA87 /* LaunchScreen.storyboard */; };
 		1A45CBAC24DA9A7E00D5FA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45CBAB24DA9A7E00D5FA87 /* main.m */; };
+		1A45CBBB24DAA00F00D5FA87 /* IFMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45CBB324DAA00F00D5FA87 /* IFMMenuView.m */; };
+		1A45CBBC24DAA00F00D5FA87 /* IFMMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45CBB524DAA00F00D5FA87 /* IFMMenuContainerView.m */; };
+		1A45CBBD24DAA00F00D5FA87 /* IFMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45CBB624DAA00F00D5FA87 /* IFMMenuItem.m */; };
+		1A45CBBE24DAA00F00D5FA87 /* IFMMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45CBBA24DAA00F00D5FA87 /* IFMMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		1A45CBA824DA9A7E00D5FA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A45CBAA24DA9A7E00D5FA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A45CBAB24DA9A7E00D5FA87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A45CBB324DAA00F00D5FA87 /* IFMMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFMMenuView.m; sourceTree = "<group>"; };
+		1A45CBB424DAA00F00D5FA87 /* IFMMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFMMenu.h; sourceTree = "<group>"; };
+		1A45CBB524DAA00F00D5FA87 /* IFMMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFMMenuContainerView.m; sourceTree = "<group>"; };
+		1A45CBB624DAA00F00D5FA87 /* IFMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFMMenuItem.m; sourceTree = "<group>"; };
+		1A45CBB724DAA00F00D5FA87 /* IFMMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFMMenuView.h; sourceTree = "<group>"; };
+		1A45CBB824DAA00F00D5FA87 /* IFMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFMMenuItem.h; sourceTree = "<group>"; };
+		1A45CBB924DAA00F00D5FA87 /* IFMMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFMMenuContainerView.h; sourceTree = "<group>"; };
+		1A45CBBA24DAA00F00D5FA87 /* IFMMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFMMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 		1A45CB8D24DA9A7C00D5FA87 = {
 			isa = PBXGroup;
 			children = (
+				1A45CBB224DAA00F00D5FA87 /* ZYMenu */,
 				1A45CB9824DA9A7C00D5FA87 /* ZYMenuDemo */,
 				1A45CB9724DA9A7C00D5FA87 /* Products */,
 			);
@@ -74,6 +87,21 @@
 				1A45CBAB24DA9A7E00D5FA87 /* main.m */,
 			);
 			path = ZYMenuDemo;
+			sourceTree = "<group>";
+		};
+		1A45CBB224DAA00F00D5FA87 /* ZYMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1A45CBB424DAA00F00D5FA87 /* IFMMenu.h */,
+				1A45CBBA24DAA00F00D5FA87 /* IFMMenu.m */,
+				1A45CBB924DAA00F00D5FA87 /* IFMMenuContainerView.h */,
+				1A45CBB524DAA00F00D5FA87 /* IFMMenuContainerView.m */,
+				1A45CBB824DAA00F00D5FA87 /* IFMMenuItem.h */,
+				1A45CBB624DAA00F00D5FA87 /* IFMMenuItem.m */,
+				1A45CBB724DAA00F00D5FA87 /* IFMMenuView.h */,
+				1A45CBB324DAA00F00D5FA87 /* IFMMenuView.m */,
+			);
+			path = ZYMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A45CBA124DA9A7C00D5FA87 /* ViewController.m in Sources */,
+				1A45CBBB24DAA00F00D5FA87 /* IFMMenuView.m in Sources */,
+				1A45CBBD24DAA00F00D5FA87 /* IFMMenuItem.m in Sources */,
 				1A45CB9B24DA9A7C00D5FA87 /* AppDelegate.m in Sources */,
 				1A45CBAC24DA9A7E00D5FA87 /* main.m in Sources */,
+				1A45CBBE24DAA00F00D5FA87 /* IFMMenu.m in Sources */,
+				1A45CBBC24DAA00F00D5FA87 /* IFMMenuContainerView.m in Sources */,
 				1A45CB9E24DA9A7C00D5FA87 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
