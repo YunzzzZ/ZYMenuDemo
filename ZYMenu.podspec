@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ZYMenu"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "a menu view"
   spec.description  = <<-DESC
                     brow a view show a view show as a menu for controller
